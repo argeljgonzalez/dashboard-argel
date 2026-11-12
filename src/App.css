@@ -1,0 +1,97 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* TEMA CLARO */
+.dashboard {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #212529;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dashboard aside {
+  background: #f8f9fa !important;
+  color: #212529 !important;
+}
+
+.dashboard .card {
+  background: #ffffff !important;
+  color: #212529 !important;
+}
+
+.dashboard .form-control {
+  background: #ffffff !important;
+  color: #212529 !important;
+}
+
+/* TEMA OSCURO */
+.dashboard.dark {
+  background: #212529 !important;
+  color: #ffffff !important;
+}
+
+.dashboard.dark main {
+  background: #212529 !important;
+  color: #ffffff !important;
+}
+
+/* SIDEBAR OSCURO */
+.dashboard.dark aside {
+  background: #171a20 !important;
+  color: #ffffff !important;
+}
+
+.dashboard.dark aside .border {
+  background: #2b3038 !important;
+  color: #ffffff !important;
+  border-color: #454b55 !important;
+}
+
+/* TARJETAS OSCURAS */
+.dashboard.dark .card {
+  background: #2b3038 !important;
+  color: #ffffff !important;
+  border-color: #454b55 !important;
+}
+
+.dashboard.dark .card-title,
+.dashboard.dark .card-text {
+  color: #ffffff !important;
+}
+
+.dashboard.dark .text-muted {
+  color: #adb5bd !important;
+}
+
+/* BUSCADOR OSCURO */
+.dashboard.dark .form-control {
+  background: #343a40 !important;
+  color: #ffffff !important;
+  border-color: #495057 !important;
+}
+
+.dashboard.dark .form-control::placeholder {
+  color: #adb5bd !important;
+}
+
+/* ANIMACIONES */
+.dashboard aside,
+.dashboard main,
+.dashboard .card,
+.dashboard .form-control {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.card {
+  transition: transform 0.2s ease,
+              background-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
